@@ -1,0 +1,12 @@
+CSS file has no header.
+
+HTML TAG ex:
+body, head, li, ul.
+
+CSS:
+background-color,
+font-family: must have the font loaded onto your computer. There is also backup fonts. ex "font-family: Barlow, Arial;" if there is no Barlow, use Arial.
+
+
+#000 is black
+#FFF is white

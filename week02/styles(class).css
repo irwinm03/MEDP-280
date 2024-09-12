@@ -1,0 +1,50 @@
+/*this is a tag selector*/
+
+body{
+	background-color: #99d898;
+	font-family: Barlow, Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	color: #333;
+}
+
+/*this is a descendant selector*/
+
+header h1 {
+	font-family: Georgia, serif;
+}
+
+nav {
+	background-color: #FFF;
+	padding: 20px;
+	font-family: Georgia, serif;
+}
+
+nav a {
+	margin: 20px;
+	color: magenta;
+	text-decoration: none;
+}
+
+main p a {
+	color: #F00;
+	text-decoration: none;
+}
+
+main a:hover {
+	color: #000;
+}
+
+main img.detail {
+	width: 500px;
+}
+
+main img.vanilla {
+	width: 300px;
+}
+
+
+
+footer h1 {
+	font-size: 12px;
+}
