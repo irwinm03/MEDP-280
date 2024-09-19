@@ -1,0 +1,76 @@
+/*style.css*/
+html {
+	background-color: #000;
+	color: #FFF;
+}
+
+body{
+  	font-family: "Noto Sans Warang Citi", sans-serif;
+  	font-weight: 100;
+  	font-style: normal;
+  	/*background-color: #000; /* full background color */
+  	/*background-image: url("images/pexels-charlotte-may-5946728.jpg");*/
+  	/*background-attachment: fixed;*/
+  	/*color: #FFF;	/*text color of anything in body*/
+}
+
+
+/* a hashtag is for id*/
+#wrapper { 		/*the About Me*/
+	/*background-color: #00F;	/*background color of the wrapper*/
+	width: 100%;	
+	height: 100%;
+	/*margin: 10px auto 10px auto;*/ /*how much space before and after the element*/
+	color: #0F0;
+}
+
+#experiment {	/*the index*/
+	/*background-color: #00F;*/
+}
+
+nav{
+	/*background-color: #FFF;*/
+	padding: 20px;		/*how much space inside the element but before text*/
+	margin: 10px auto 10px auto;
+	font-size: 50px;
+	font-weight: 900;
+	width: 50%;
+}
+
+nav a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #000;
+}
+
+main {
+	/*color: #FFF;*/
+	font-family: cursive;
+}
+
+
+/* using "." is for class selectors. Can use "article img.enlargement" for more specificity*/
+img.enlargement{
+	height: 300px;
+	width: auto;
+	float: left;
+}
+
+img.thumbnail{
+	height:100px;
+	width: auto;
+}
+
+article a{
+	color: #FFF;
+}
+
+article a:hover{
+	color:#000;
+}
+
+
+

@@ -1,0 +1,19 @@
+week03 notes
+
+class: tags with literal "class='xyz"
+Psuedo class: anything with the same tag type, a.k.a, "nav a:hover"
+
+html non-semantic elements
+
+<div> </div> block eleemnt. no margin. makes a block.
+<span> <span> inline element. does nothing without css.
+
+
+
+First rule of thumb in css sheet:
+body
+
+https://fonts.google.com/
+
+so to get fonts from google,
+u can find a font, then get font, then go to embedded link and copy the CSS section code. U must ALSO copy the html code into your html file. can paste under the link of the style sheet. :)

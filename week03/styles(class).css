@@ -1,0 +1,52 @@
+/*style.css*/
+body{
+  	font-family: "Noto Sans Warang Citi", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+
+  	background-image: url("images(class)/pexels-charlotte-may-5946728.jpg");
+  	background-attachment: fixed;
+}
+
+
+/* a hashtag is for id*/
+#wrapper {
+	background-color: #00F;
+	width: 80%;
+	padding: 40px;
+	margin: 100px auto 100px auto;
+}
+
+
+nav{
+	background-color: #FFF;
+	padding: 20px;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 900;
+}
+
+nav a{
+	margin: 0px 10px 0px 10px;
+	color: #000;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #F00;
+}
+
+
+/* using "." is for class selectors. Can use "article img.enlargement" for more specificity*/
+img.enlargement{
+	height: 300px;
+	width: auto;
+}
+
+img.thumbnail{
+	height:100px;
+	width: auto;
+}
+
+
+
