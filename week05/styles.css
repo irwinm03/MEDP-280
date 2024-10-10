@@ -1,0 +1,107 @@
+body {
+	background-color: #F0FFFF;
+	margin: 0px;
+	padding: 10px;
+	font-family: "Inter", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+}
+
+#wrapper {
+	background-color: #FFF;
+	width: 80%;
+	margin: 0px auto;
+}
+
+header {
+	color: #069AF3;
+}
+
+img.banner{
+	width: 95%;
+	height: 50px;
+}
+
+article.gallery img{
+	width: 300px;
+	height: 200px;
+	display: block;
+}
+
+table {
+	width: 1000px;
+	border-style: solid;
+	border-color: #000;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #000;
+}
+
+p.first {
+	color: #0497F2;
+}
+
+p.second {
+	color: #1DA1F4;
+}
+
+p.third {
+	color: #35ABF5;
+}
+
+p.fourth {
+	color: #4DB5F6;
+}
+
+p.fifth {
+	color: #66C0F7;
+}
+
+
+td.td1 {
+	color: #0497f2;
+}
+td.td2 {
+	color: #0497F2;
+}
+td.td3 {
+	color: #0096F4;
+}
+td.td4 {
+	color: #0486D7;
+}
+td.td5 {
+	color: #1FA2F3;
+}
+td.td6 {
+	color: #0E93E6;
+}
+td.td7 {
+	color: #0375BC;
+}
+td.td8 {
+	color: #3AADF5;
+}
+td.td9 {
+	color: #1B90D9;
+}
+td.td10 {
+	color: #0364A1;
+}
+td.td11 {
+	color: #55B8F6;
+}
+td.td12 {
+	color: #298DCB;
+}
+
+a:hover {
+	color: #000;
+}
+
+
+/*https://colors.artyclick.com/color-names-dictionary/color-names/azure-color*/
