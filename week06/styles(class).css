@@ -1,0 +1,104 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background-color: #ccc;
+	padding: 0px; 
+	margin: 0px;	/*margin and padding are not 0 on default*/
+}
+
+div.container {
+	width: 90%;
+	margin: 0px auto;
+	background-color: #fff;
+}
+
+header, nav, main, aside, footer {
+	padding: 10px;
+}
+
+nav ul li {
+	display: inline-block;
+	background-color: #fff;
+	width: 100px;
+	text-align: center;
+	padding: 10px 0px;
+	margin: 0px 20px 0px 0px;
+	border: solid 1px #000;
+}
+
+header {
+	background-color: skyblue;
+}
+
+nav {
+	background-color: cadetblue;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+main {
+	background-color: slategray;
+	float: left;
+	width: 70%;
+}
+
+main div.description img.thumbnail {
+	width: 100px;
+	border: solid 10px #000;
+	float: left;
+	margin-right: 15px;
+}
+
+div.buttonAbsolute {
+	background-color: yellow;
+	position: absolute;
+	top: 0px;
+	right: 150px;
+	padding: 20px;
+	border-radius: 125px;
+	z-index: 2;
+	opacity: 0.6;
+	width: 130px;
+	text-align: center;
+}
+
+div.buttonAbsolute2 {
+	background-color: orange;
+	position: absolute;
+	top: 0px;
+	right: 260px;
+	border-radius: 200px;
+	padding: 20px;
+	z-index: 3;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+
+div.buttonRelative {
+	background-color: yellow;
+	position: relative;
+	left: 115px;
+	width: 100px;
+	padding: 10px;
+	z-index: 5;
+}
+
+
+aside {
+	background-color: darkseagreen;
+	float: left;
+	width: 30%;
+}
+
+footer {
+	background-color: darkslateblue;
+	float: none;
+	clear: both;
+}
