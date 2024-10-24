@@ -1,0 +1,100 @@
+/* START border-box fix */
+html {
+    background-image: url("images/HalloweenBackground.jpg");
+  box-sizing: border-box;
+}
+,:before, :after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+
+body {
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    display: flex; /*set max width of .container but display body as flex and center it's contents*/
+    justify-content: center; /*this centers the contents of the body like .container*/
+    text-align: center;
+
+    font-family: "Jolly Lodger", system-ui;
+    font-weight: 10;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5 {
+ text-transform: uppercase;
+}
+
+.container > {
+  padding: 10px;
+}
+
+/*FLEX CONTAINER*/
+.container {
+    display: flex; /*use flex box*/
+    flex-wrap: wrap; /*allows wrapping of flex items*/
+    max-width: 1000px;
+    font-size: 20px;
+}
+
+/*FLEX ITEMS*/
+header {
+    background: #FF004D;
+    flex: 1 0 100%; /*grow on, shrink off, basis width of browser*/
+    order: 1; /*display order regardless of html*/
+}
+
+header h1 {
+    font-size: 80px;
+}
+
+main {
+    background: #F97300;
+    flex: 1 1 400px;
+    /* allow to grow and shrink with remaining space of total 900px, when container is larger than 900, extra space is distributed evenly, when smaller, items will wrap to next line in order to maintain the basis */
+    order: 3;
+}
+
+main h2{
+    margin: 10px 0px 10px 0px;
+}
+
+nav {
+    color: #000;
+    background: #E2DFD0;
+    flex: 1 0 200px; /*grow but do not shrink less than basis*/
+    order: 2;
+}
+
+nav h2 {
+    font-size: 50px;
+    margin: 10px 0px 10px 0px;
+}
+
+nav li {
+    text-align: left;
+    margin: 10px;
+}
+
+aside {
+    color: #000;
+    background: #FAEF5D;
+    flex: 1 0 150px; /*grow but do not shrink less than basis*/
+    order: 4;
+}
+
+aside h2 {
+    margin: 10px 0px 10px 0px;  /*up right down left*/
+}
+aside p {
+    font-weight: 10;
+    margin: 3px;
+}
+
+footer {
+    background: #AD49E1;
+    flex: 1 0 100%; /*grow on, shrink off, basis width of browser*/
+    order: 5;s
+}
