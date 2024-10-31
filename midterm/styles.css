@@ -1,0 +1,227 @@
+/* border-box fix */
+html {
+  background-image: url("images/HalloweenBackground.jpg");
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+
+    font-family: "Jolly Lodger", system-ui;
+    font-weight: 10;
+    font-style: normal;
+}
+
+body.halloweenhistory {
+    display: flex; /*set max width of .container but display body as flex and center it's contents*/
+    justify-content: center; /*this centers the contents of the body like .container*/
+    text-align: center;
+}
+
+.container {
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));   
+  width: 80%;
+  margin: 0 auto; /*for 2 values, top and bottom are 0, left and right are auto*/
+}
+/* first parameter is how many times, second is the width */
+/*repeats 12 times(makes 12 columns, the minmax means that the columns are the same width of 0 to 1fr since it can be colapsable*/
+
+/* Add padding to all of the .container child elements */
+.container > * {
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0px;
+}
+
+header.default {
+  grid-column: 1 / 13;  /*makes column go from column 1 to 13*/
+}
+
+header.default h1{
+   color: #F00;
+   font-size: 100px;
+   text-align: center;
+}
+
+header.halloweenhistory {
+  background: #FF004D;
+  grid-column: 2 / 12;
+}
+
+header.halloweenhistory h1 {
+  font-size: 100px;
+}
+
+header.halloweenstuff {
+  grid-column: 2 / 12;
+}
+
+header.halloweenstuff h1{
+   color: #F00;
+   font-size: 100px;
+   text-align: center;
+}
+
+main {
+  background: ;
+  grid-column: 4 / 10;
+  font-size: 20px;
+}
+
+main.halloweenhistory {
+  background: #F97300;
+  grid-column: 4 / 12;
+}
+
+main.halloweenhistory h2 {
+  color: #FFF;
+  font-size: 75px;
+}
+
+main.halloweenstuff {
+  background-image: url("images/HalloweenHeadstone.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  grid-column: 4 / 6;
+  grid-row: 2 / 6;
+  text-align: center;
+  font-size: 50px;
+}
+
+main.default {
+  grid-column: 4 / 14;
+}
+
+main.default h2 {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+main.default p {
+  color: #FFF;
+  font-size: 60px;
+}
+
+
+
+nav.default {
+  color: #F00;
+  grid-column: 1 / 4;
+}
+
+nav.default h2 {
+   color: #F00;
+   font-size: 60px;
+}
+
+nav.default li {
+  font-size: 40px;
+}
+
+a:hover{
+   color: #F00;
+}
+
+nav.halloweenhistory {
+  background: #E2DFD0;
+  color: #000;
+  grid-column: 2 / 4;
+}
+
+nav.halloweenhistory h2 {
+  color: #000;
+  font-size: 75px;
+}
+
+nav.halloweenstuff {
+  background-image: url("images/HalloweenHeadstone.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  grid-row: 2 / 10;
+  width: 300px;
+}
+
+nav.halloweenstuff h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+nav.halloweenstuff li {
+  font-size: 40px;
+}
+
+nav li {
+    text-align: left;
+    margin: 10px;
+    font-size: 25px;
+}
+
+aside.halloweenstuff {
+  background-image: url("images/HalloweenHeadstone.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  grid-column: 6 / 8;
+  grid-row: 2 / 6;
+  text-align: center;
+  font-size: 50px;
+  height: 300px;
+}
+
+aside.halloweenstuff2 {
+  background-image: url("images/HalloweenHeadstone.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  grid-column: 8 / 10;
+  grid-row: 2 / 6;
+  text-align: center;
+  font-size: 50px;
+}
+
+aside.skull {
+  grid-column: 12 / 13;
+  grid-row: 4 / 5;
+  background-image: url("images/Skull.png");
+  background-size: 35px;
+  background-repeat: no-repeat;
+}
+
+aside li {
+    text-align: left;
+    margin: 5px;
+}
+
+footer {
+  background: ;
+  grid-column: 1 / 13;
+}
+
+footer.halloweenhistory {
+  background: #AD49E1;
+  grid-column: 2 / 12;
+  grid-row: 4 / 6;
+}
+
+footer.halloweenstuff {
+  background-image: url("images/HalloweenHeadstone.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  grid-column: 10 / 12;
+  grid-row: 2 / 6;
+  text-align: center;
+  font-size: 50px;
+}
+
+main, nav, aside {
+  grid-row: 2 / 4;
+}
